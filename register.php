@@ -29,7 +29,7 @@ function getInputValue($name) {
 
     </head>
     <body>
-    
+
         <?php
             if(isset($_POST['registerButton'])) {
                 echo '<script type="text/javascript">
@@ -64,7 +64,7 @@ function getInputValue($name) {
                         <p>
                             <?php echo $account->getError(Constants::$loginFailed); ?>
                             <label for="loginUsername">Username</label>
-                            <input id="loginUsername" name="loginUsername" type="text" placeholder="e.g. Dewey Banks" required>
+                            <input id="loginUsername" name="loginUsername" type="text" placeholder="e.g. Dewey Banks" value="<?php echo getInputValue('loginUsername'); ?>" required>
                         </p>
                         <p>
                             <label for="loginPassword">Password</label>

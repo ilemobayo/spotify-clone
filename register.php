@@ -29,30 +29,7 @@ function getInputValue($name) {
 
     </head>
     <body>
-
-         <!-- <?php
-            if(isset($_POST['registerButton'])) {
-                echo '<script type="text/javascript">
-          
-                    $(document).ready(function() {
-        
-                    $("#loginForm").show();
-                    $("#registerForm").hide();
-                     
-                });';
-            } else {
-                echo '<script type="text/javascript">
-          
-                    $(document).ready(function() {
-        
-                    $("#loginForm").hide();
-                    console.log("loginForm: hide");
-                    $("#registerForm").show();
-                    console.log("registerForm: show");
-                     
-                });</script>';
-            }
-        ?>  -->
+    
         <?php
             if(isset($_POST['registerButton'])) {
                 echo '<script type="text/javascript">
@@ -76,30 +53,6 @@ function getInputValue($name) {
                 });</script>';
             }
         ?> 
-        <!-- <script type="text/javascript">
-          
-        $(document).ready(function() {
-
-            $("loginForm").show();
-            console.log("loginForm: show");
-            $("#registerForm").hide();
-            console.log("registerForm: hide");
-             
-        });
-  
-        </script> -->
-        <script type="text/javascript">
-          
-        $(document).ready(function() {
-
-            $("loginForm").show();
-            console.log("loginForm: show");
-            $("#registerForm").hide();
-            console.log("registerForm: hide");
-             
-        });
-  
-        </script>
 
         <div id="background">
 

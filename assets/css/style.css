@@ -1,0 +1,62 @@
+/* NOW PLAYING BAR */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#nowPlayingBarContainer {
+    width: 100%;
+    background-color: #282828;
+    bottom: 0;
+    position: fixed;
+    min-width: 620px;
+    /* height: 100px; /* remove later */
+}
+
+#nowPlayingBar {
+    /* container alrers its width and height to best fill availablee space */
+    /* expands items to fill free space, or shrinks them to prevent overflow */
+    display: flex;
+    height: 90px;
+    padding: 16px;
+    /* means of the 90 pixels it includes the 16px padding */
+    box-sizing: border-box;
+
+}
+
+#nowPLayingLeft,
+#nowPlayingRight {
+    width: 30%;
+    min-width: 180px;
+}
+
+#nowPlayingCenter {
+    width: 40%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column; /* direction of the flexible items */
+    align-items: center;
+}
+
+#nowPlayingBar .content { /* content should span across whole width of container */
+    width: 100%;
+}
+
+.playerControls .buttons {
+    margin: 0 auto; /* center */
+    display: table;
+}
+
+.controlButton {
+    background-color: transparent;
+    border: none;
+    vertical-align: middle;
+}'
+
+.controlButton img {
+    width: 20px;
+    height: 20px;
+}
+

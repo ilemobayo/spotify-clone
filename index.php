@@ -25,7 +25,11 @@ include("includes/config.php");
             <div id="nowPlayingBar">
 
                 <div id="nowPlayingLeft">
-
+                    <div class="content">
+                        <span class="albumLink">
+                            <img src="#" alt=""> 
+                        </span>
+                    </div>
                 </div>
 
                 <div id="nowPlayingCenter">
@@ -34,8 +38,45 @@ include("includes/config.php");
 
                         <div class="buttons">
                             <button class="controlButton shuffle" title="Shuffle button">
-                                <img src="assets/images/icons/shuffle.png" alt="shuffle button" />>
+                                <img src="assets/images/icons/shuffle.png" alt="shuffle button" />
                             </button>
+
+                            <button class="controlButton previous" title="Previous button">
+                                <img src="assets/images/icons/previous.png" alt="shuffle button" />
+                            </button>
+
+                            <button class="controlButton play" title="Play button">
+                                <img src="assets/images/icons/play.png" alt="shuffle button" />
+                            </button>
+
+                            <button class="controlButton pause" title="Puase button" style="display: none;">
+                                <img src="assets/images/icons/pause.png" alt="pause button" />
+                            </button>
+
+                            <button class="controlButton next" title="Next button">
+                                <img src="assets/images/icons/next.png" alt="shuffle button" />
+                            </button>
+
+                            <button class="controlButton repeat" title="Repeat button">
+                                <img src="assets/images/icons/repeat.png" alt="shuffle button" />
+                            </button>
+
+                        </div>
+
+                        <div class="playbackBar">
+                            <span clas="progressTime current">0.00</span>
+
+                            <div class="progressBar">
+
+                                <div class="progressBarBg">
+
+                                    <div class="progress"></div>
+
+                                </div>
+
+                            </div>
+
+                            <span clas="progressTime remaining">0.00</span>
                         </div>
 
                     </div>

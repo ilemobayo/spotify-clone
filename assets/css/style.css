@@ -53,10 +53,57 @@ html, body {
     background-color: transparent;
     border: none;
     vertical-align: middle;
-}'
+}
 
 .controlButton img {
-    width: 20px;
+    width: 20px; 
     height: 20px;
 }
 
+.controlButton.play img,
+.controlButton.pause {
+    width: 32px;
+    height: 32px;
+  
+}
+
+.controlButton:hover {
+    cursor: pointer;
+}
+
+.playbackBar {
+    display: flex;
+}
+
+.playbackBar span {
+    color: #a0a0a0;
+    font-size: 11px;
+    min-width: 40px;
+    text-align: center;
+}
+
+.progressBar {
+    width: 100%;
+    height: 12px;
+    display: inline-flex; /* look up */
+    cursor: pointer;
+   
+}
+
+.progressBarBg {
+    background-color: #404040;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.progress {
+    background-color: #a0a0a0;
+    height: 4px;
+    width: 10%;
+    border-radius: 2px;
+}
+
+.playbackBar .progressBar {
+    margin-top: 3px; /* make progress bar look more centered */
+}

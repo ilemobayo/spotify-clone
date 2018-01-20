@@ -27,7 +27,7 @@ include("includes/config.php");
                 <div id="nowPlayingLeft">
                     <div class="content">
                         <span class="albumLink">
-                            <img src="#" alt=""> 
+                            <img src="https://i.ytimg.com/vi/rb8y38eilRM/masresdefault.jpg" alt=""> 
                         </span>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ include("includes/config.php");
                                 <img src="assets/images/icons/play.png" alt="shuffle button" />
                             </button>
 
-                            <button class="controlButton pause" title="Puase button" style="display: none;">
+                            <button class="controlButton pause" title="Pause button" style="display: none;">
                                 <img src="assets/images/icons/pause.png" alt="pause button" />
                             </button>
 

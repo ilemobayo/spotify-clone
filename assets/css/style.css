@@ -6,6 +6,11 @@ html, body {
     height: 100%;
 }
 
+* { /* set default font */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+}
+
 #nowPlayingBarContainer {
     width: 100%;
     background-color: #282828;
@@ -42,6 +47,7 @@ html, body {
 
 #nowPlayingBar .content { /* content should span across whole width of container */
     width: 100%;
+    height: 57px;
 }
 
 .playerControls .buttons {
@@ -107,3 +113,29 @@ html, body {
 .playbackBar .progressBar {
     margin-top: 3px; /* make progress bar look more centered */
 }
+
+#nowPlayingLeft .albumArtwork {
+    height: 100%;
+    max-width: 57px;
+    margin-right: 15px;
+    float: left;
+    background-size: cover; /* scales image to be largest size it can so all the space is covered */
+}
+
+#nowPlayingLeft .trackInfo {
+    display: table;
+}
+
+#nowPlayingLeft .trackInfo .trackName {
+    margin: 6px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#nowPlayingLeft .trackInfo .artistName span {
+    font-size: 12px;
+    color: #a0a0a0;
+}
+
+
+

@@ -27,8 +27,18 @@ include("includes/config.php");
                 <div id="nowPlayingLeft">
                     <div class="content">
                         <span class="albumLink">
-                            <img src="https://i.ytimg.com/vi/rb8y38eilRM/masresdefault.jpg" alt=""> 
+                            <img class="albumArtwork" src="https://i.ytimg.com/vi/rb8y38eilRM/masresdefault.jpg" alt=""> 
                         </span>
+
+                        <div class="trackInfo">
+                            <span class="trackName">
+                                <span>Happy Birthday</span>
+                            </span>
+
+                            <span class="artistName">
+                                <span>Marc Holman</span>
+                            </span>
+                        </div>
                     </div>
                 </div>
 

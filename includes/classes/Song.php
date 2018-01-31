@@ -30,15 +30,15 @@
             return $this->title;
         }
 
-        public function getArtistId() {
-            return $this->artist;
+        public function getArtist() {
+            return new Artist($this->con, $this->artistId);
         }
 
-        public function getAlbumId() {
-            return $this->albumId;
+        public function getAlbum() {
+            return new Album($this->con, $this->albumId);
         }
 
-        public function getgenre() {
+        public function getGenre() {
             return $this->genre;
         }
 
@@ -48,6 +48,10 @@
 
         public function getPath() {
             return $this->path;
+        }
+
+        public function getMysqliData() {
+            return $this->mysqliData;
         }
     }
 ?>

@@ -21,7 +21,25 @@ $(document).ready(function() {
 
 
 function setTrack(trackId, newPlaylist, play) {
+	audioElement.setTrack("assets/music/bensound-betterdays.mp3");
+	if(play) {
+		audioElement.play();
+	}
+	//audioElement.play();
+}
 
+function playSong() {
+	// hide play, show pause
+	$(".controlButton.play").hide();
+	$(".controlButton.pause").show();
+	audioElement.play();
+}
+
+function pauseSong() {
+	// show pause, hide play
+	$(".controlButton.play").show();
+	$(".controlButton.pause").hide();
+	audioElement.pause();
 }
 
 </script>
@@ -67,11 +85,11 @@ function setTrack(trackId, newPlaylist, play) {
 						<img src="assets/images/icons/previous.png" alt="Previous">
 					</button>
 
-					<button class="controlButton play" title="Play button">
+					<button class="controlButton play" title="Play button" onclick="playSong()">
 						<img src="assets/images/icons/play.png" alt="Play">
 					</button>
 
-					<button class="controlButton pause" title="Pause button" style="display: none;">
+					<button class="controlButton pause" title="Pause button" style="display: none;" onclick="pauseSong()">
 						<img src="assets/images/icons/pause.png" alt="Pause">
 					</button>
 

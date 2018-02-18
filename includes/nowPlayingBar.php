@@ -26,8 +26,15 @@ function setTrack(trackId, newPlaylist, play) {
 	$.post("includes/handlers/ajax/getSongJson.php",{ songId: trackId }, function(data) {
 		// parse JSON data, turn into an object
 		var track = JSON.parse(data);
+
+		// put trackname into lower right span
+		$(".trackName span").text(track.title);
+
+		$.post("includes/handlers/ajax/getArtistJson.php", { songId: track.artist}, function(data){
+
+		});
 		// read/use the object
-		console.log(track);
+		//console.log(track);
 		audioElement.setTrack(track.path);
 		//audioElement.play();
 	});
@@ -69,7 +76,7 @@ function pauseSong() {
 				<div class="trackInfo">
 
 					<span class="trackName">
-						<span>Happy Birthday</span>
+						<span></span>
 					</span>
 
 					<span class="artistName">

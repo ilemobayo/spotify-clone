@@ -21,13 +21,24 @@ $(document).ready(function() {
 
 
 function setTrack(trackId, newPlaylist, play) {
-	audioElement.setTrack("assets/music/bensound-betterdays.mp3");
+
+	// ajax call to set track
+	$.post("includes/handlers/ajax/getSongJson.php",{ songId: trackId }, function(data) {
+		// parse JSON data, turn into an object
+		var track = JSON.parse(data);
+		// read/use the object
+		console.log(track);
+		audioElement.setTrack(track.path);
+		//audioElement.play();
+	});
+
 	if(play) {
 		audioElement.play();
 	}
-	//audioElement.play();
+	
 }
 
+// play
 function playSong() {
 	// hide play, show pause
 	$(".controlButton.play").hide();
@@ -35,6 +46,7 @@ function playSong() {
 	audioElement.play();
 }
 
+// pause
 function pauseSong() {
 	// show pause, hide play
 	$(".controlButton.play").show();
